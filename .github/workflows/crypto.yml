@@ -1,0 +1,18 @@
+# Crypto (BTC, ETH, SOL) every 8 hours, 7 days a week.
+# Times are UTC: 00:15, 08:15, 16:15 = Melbourne 10:15am, 6:15pm, 2:15am (AEST; +1h in AEDT).
+name: crypto
+
+on:
+  schedule:
+    - cron: "15 */8 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  crypto:
+    uses: ./.github/workflows/_run.yml
+    with:
+      task: crypto
+      timeout: 45
+    secrets: inherit

@@ -1,0 +1,18 @@
+# Weekly summary to Telegram (and reports/weekly/ on the state branch).
+# 07:00 UTC Friday = Melbourne Friday 6pm (AEDT, Oct-Apr) / 5pm (AEST, Apr-Oct).
+name: weekly summary
+
+on:
+  schedule:
+    - cron: "0 7 * * 5"
+
+permissions:
+  contents: write
+
+jobs:
+  weekly:
+    uses: ./.github/workflows/_run.yml
+    with:
+      task: weekly
+      timeout: 15
+    secrets: inherit

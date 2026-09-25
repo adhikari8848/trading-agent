@@ -1,0 +1,10 @@
+#!/bin/bash
+# Shortcut: ./ta doctor | ./ta run --dry-run | ./ta status | ./ta stop | ...
+cd "$(dirname "$0")" || exit 1
+if [ -x .venv/bin/python ]; then PY=.venv/bin/python
+elif [ -x .conda-env/bin/python ]; then PY=.conda-env/bin/python
+else echo "No Python environment yet: run ./setup.sh first" >&2; exit 1; fi
+mkdir -p logs
+# Show output live and keep a copy in logs/ta-last.log
+PYTHONUNBUFFERED=1 "$PY" -m agent "$@" 2>&1 | tee logs/ta-last.log
+exit "${PIPESTATUS[0]}"

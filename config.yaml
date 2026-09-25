@@ -1,0 +1,65 @@
+# Trading agent settings. Edit this file, not the code.
+# Keys and secrets live in .env, never here.
+
+# paper = Alpaca paper account (fake money, trades run automatically)
+# live  = real money (every order needs your Telegram approval)
+mode: paper
+
+watchlist:
+  # Analysed once per US trading day (Mon-Fri) and traded on Alpaca
+  us_stocks: [NVDA, AVGO, MSFT, AAPL, ABBV]
+  # Analysed every few hours, 7 days a week (crypto trades 24/7), traded on Alpaca
+  crypto: [BTC-USD, ETH-USD, SOL-USD]
+  # Analysed on weekdays, reported as signals only (you trade these on Stake)
+  asx_signals: [NDQ.AX, CBA.AX, BHP.AX]
+
+risk:
+  # The most the bot may ever have invested at once, in US dollars.
+  # Applies in paper mode too, so paper results match what live would do.
+  capital_cap_usd: 500
+  # Target size per position, as a share of capital_cap_usd
+  buy_weight: 0.10         # "Buy" rating        -> 10% ($50)
+  overweight_weight: 0.05  # "Overweight" rating -> 5%  ($25)
+  underweight_weight: 0.025  # "Underweight" -> trim down to 2.5% ($12.50)
+  # "Hold" keeps the position, "Sell" sells all
+  min_order_usd: 5         # skip trades smaller than this
+  max_orders_per_run: 6
+  # Price protection: limit orders at most this far from the last price
+  limit_buffer_pct: 1.0
+  # Stop buying (and alert you) if the bot's total P&L drops below this
+  max_loss_usd: 100
+
+schedule:
+  # On GitHub the run times are the cron lines in .github/workflows/*.yml (UTC).
+  # On a Mac: after editing, run  ./ta install-schedule  (times are the Mac's local time).
+  stocks_time: "08:30"     # Tue-Sat mornings, after the US close
+  # Also the minimum gap between crypto runs. Keep it equal to the cron in crypto.yml.
+  crypto_every_hours: 8    # 1, 2, 3, 4, 6, 8, 12 or 24
+  weekly_day: Fri
+  weekly_time: "18:00"
+
+approval:
+  # Live orders always wait for Telegram approval. Set true to also approve paper orders.
+  require_in_paper: false
+  # How long to wait for your tap before skipping the orders
+  timeout_minutes: 180
+
+llm:
+  provider: openai
+  # Heavy reasoning (research manager, portfolio manager)
+  deep_model: gpt-6-sol
+  # High-volume analyst work
+  quick_model: gpt-6-luna
+  max_debate_rounds: 1
+  max_risk_rounds: 1
+  # Stop analysing once today's OpenAI spend (all runs, Melbourne day) passes this (US$)
+  daily_budget_usd: 3.00
+  # US$ per 1M tokens [input, output], used for the spend tracker
+  prices_per_million:
+    gpt-6-sol: [2.00, 10.00]
+    gpt-6-luna: [0.10, 0.50]
+    gpt-6-astra: [10.00, 50.00]
+
+analysts:
+  stock: [market, social, news, fundamentals]
+  crypto: [market, social, news]

@@ -1,0 +1,19 @@
+# US stocks (traded) + ASX (signals), once per US trading day, after the close.
+# 22:30 UTC Mon-Fri = Melbourne Tue-Sat 8:30am (AEST) / 9:30am (AEDT).
+# US holidays are skipped by the bot itself (it checks Alpaca's market calendar).
+name: stocks
+
+on:
+  schedule:
+    - cron: "30 22 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  stocks:
+    uses: ./.github/workflows/_run.yml
+    with:
+      task: stocks
+      timeout: 100
+    secrets: inherit

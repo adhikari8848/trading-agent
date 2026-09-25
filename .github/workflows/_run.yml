@@ -1,0 +1,123 @@
+# Shared job used by the scheduled workflows. Runs one task with the saved state
+# from the `state` branch, then commits the updated state back to it.
+name: run (shared)
+
+on:
+  workflow_call:
+    inputs:
+      task:
+        description: crypto | stocks | all | weekly | doctor | status
+        type: string
+        required: true
+      force:
+        type: boolean
+        default: false
+      timeout:
+        type: number
+        default: 60
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: ${{ inputs.timeout }}
+    # One run at a time across every workflow in this repo; later runs wait.
+    concurrency:
+      group: trading-agent
+      cancel-in-progress: false
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      ALPACA_PAPER_KEY_ID: ${{ secrets.ALPACA_PAPER_KEY_ID }}
+      ALPACA_PAPER_SECRET_KEY: ${{ secrets.ALPACA_PAPER_SECRET_KEY }}
+      ALPACA_LIVE_KEY_ID: ${{ secrets.ALPACA_LIVE_KEY_ID }}
+      ALPACA_LIVE_SECRET_KEY: ${{ secrets.ALPACA_LIVE_SECRET_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+      PYTHONUNBUFFERED: "1"
+      TASK: ${{ inputs.task }}
+      FORCE: ${{ inputs.force && '--force' || '' }}
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Check out saved state
+        id: state
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          ref: state
+          path: .state
+
+      - name: Start a state branch (first run only)
+        if: steps.state.outcome == 'failure'
+        env:
+          REPO_URL: https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git
+        run: |
+          rm -rf .state && mkdir .state && cd .state
+          git init -q -b state
+          git remote add origin "$REPO_URL"
+          printf '%s\n' 'data/tradingagents/cache/' 'data/tradingagents/logs/' 'data/.run.lock' > .gitignore
+
+      - name: Link state into the project
+        run: |
+          mkdir -p .state/data .state/reports
+          ln -sfn "$PWD/.state/data" data
+          ln -sfn "$PWD/.state/reports" reports
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install
+        run: pip install -q -r requirements.txt
+
+      - name: Run ${{ inputs.task }}
+        run: |
+          case "$TASK" in
+            crypto|stocks|all) python -m agent run --scope "$TASK" ${FORCE:+"$FORCE"} ;;
+            weekly)            python -m agent weekly ;;
+            doctor)            python -m agent doctor ;;
+            status)            python -m agent status ;;
+            *) echo "unknown task: $TASK"; exit 2 ;;
+          esac
+
+      - name: Save state
+        if: always() && inputs.task != 'doctor' && inputs.task != 'status'
+        run: |
+          cd .state
+          git config user.name "trading-agent[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "No state changes."; exit 0; fi
+          git commit -q -m "state: $TASK $(date -u +%Y-%m-%dT%H:%MZ)"
+          for _ in 1 2 3; do
+            if git push -q origin HEAD:state; then exit 0; fi
+            git pull -q --rebase origin state || true
+            sleep 5
+          done
+          echo "Could not save state"; exit 1
+
+      - name: Keep logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: logs-${{ inputs.task }}-${{ github.run_id }}
+          path: logs/
+          retention-days: 14
+          if-no-files-found: ignore
+
+      - name: Tell Telegram the run failed
+        if: failure()
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_CHAT_ID" ] || exit 0
+          curl -sS -o /dev/null -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode chat_id="$TELEGRAM_CHAT_ID" \
+            --data-urlencode text="Trading agent: the $TASK run failed on GitHub. $RUN_URL"

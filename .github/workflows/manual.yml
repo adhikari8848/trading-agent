@@ -1,0 +1,27 @@
+# Run any task by hand: Actions tab > "manual run" > Run workflow.
+name: manual run
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: What to run
+        type: choice
+        options: [doctor, status, crypto, stocks, all, weekly]
+        default: status
+      force:
+        description: Run even if this run already happened today
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  manual:
+    uses: ./.github/workflows/_run.yml
+    with:
+      task: ${{ inputs.task }}
+      force: ${{ inputs.force }}
+      timeout: 100
+    secrets: inherit

@@ -1,0 +1,14 @@
+.env
+.venv/
+.conda-env/
+data/
+logs/
+reports/
+STOP
+__pycache__/
+*.pyc
+.runs-on-github
+.state/
+.pytest_cache/
+.ruff_cache/
+.DS_Store

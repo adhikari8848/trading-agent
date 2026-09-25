@@ -1,0 +1,6 @@
+# TradingAgents pinned to the version this agent was built and tested against (v0.5.1)
+tradingagents @ git+https://github.com/TauricResearch/TradingAgents.git@35543d0248bf89fcb92b17a15858ad0c0e940687
+pyyaml>=6.0
+requests>=2.32
+python-dotenv>=1.0
+pytest>=8.0
