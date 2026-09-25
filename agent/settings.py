@@ -108,6 +108,13 @@ class Settings:
         return {"Buy": self.buy_weight, "Overweight": self.overweight_weight}.get(rating)
 
 
+def _secret(name: str) -> str | None:
+    """Read a key from the environment. Stray spaces or quotes around a pasted key
+    (easy to add to .env or a GitHub secret) would otherwise break the HTTP headers."""
+    value = (os.getenv(name) or "").strip().strip('"').strip("'").strip()
+    return value or None
+
+
 def crypto_broker_symbol(ticker: str) -> str:
     """BTC-USD -> BTC/USD (Alpaca's crypto pair format)."""
     base, _, quote = ticker.upper().partition("-")
@@ -191,11 +198,11 @@ def load_settings(config_path: Path | None = None, env_path: Path | None = None,
         stocks_time=str(sched.get("stocks_time", "08:30")),
         weekly_day=str(sched.get("weekly_day", "Fri"))[:3].title(),
         weekly_time=str(sched.get("weekly_time", "18:00")),
-        openai_api_key=os.getenv("OPENAI_API_KEY") or None,
-        alpaca_key_id=os.getenv(f"{prefix}_KEY_ID") or None,
-        alpaca_secret=os.getenv(f"{prefix}_SECRET_KEY") or None,
-        telegram_token=os.getenv("TELEGRAM_BOT_TOKEN") or None,
-        telegram_chat_id=os.getenv("TELEGRAM_CHAT_ID") or None,
+        openai_api_key=_secret("OPENAI_API_KEY"),
+        alpaca_key_id=_secret(f"{prefix}_KEY_ID"),
+        alpaca_secret=_secret(f"{prefix}_SECRET_KEY"),
+        telegram_token=_secret("TELEGRAM_BOT_TOKEN"),
+        telegram_chat_id=_secret("TELEGRAM_CHAT_ID"),
         project_dir=project_dir,
     )
     _validate(s)

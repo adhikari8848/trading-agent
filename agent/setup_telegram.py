@@ -26,7 +26,7 @@ def _save_env(key: str, value: str) -> None:
 
 def setup_telegram() -> int:
     load_dotenv(PROJECT_DIR / ".env")
-    token = os.getenv("TELEGRAM_BOT_TOKEN")
+    token = (os.getenv("TELEGRAM_BOT_TOKEN") or "").strip() or None
     if not token:
         print("Put TELEGRAM_BOT_TOKEN=... in .env first (from @BotFather), then run this again.")
         return 1

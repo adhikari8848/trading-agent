@@ -278,3 +278,14 @@ def test_doctor_hides_telegram_chat_id_in_annotations(monkeypatch, capsys):
     out = capsys.readouterr().out
     assert "6690001234" in out.splitlines()[0]                  # log line (masked by GitHub)
     assert "6690001234" not in out.splitlines()[1]              # public annotation
+
+
+def test_keys_with_stray_spaces_are_cleaned(make_settings, monkeypatch):
+    s = make_settings(extra_env=[])
+    monkeypatch.setenv("ALPACA_PAPER_KEY_ID", " PKT123")            # leading space, as pasted
+    monkeypatch.setenv("ALPACA_PAPER_SECRET_KEY", '"sec"\r')        # quotes + CR
+    monkeypatch.setenv("OPENAI_API_KEY", "  ")                      # blank counts as missing
+    from agent.settings import load_settings
+    s = load_settings(project_dir=s.project_dir)
+    assert s.alpaca_key_id == "PKT123" and s.alpaca_secret == "sec"
+    assert s.openai_api_key is None

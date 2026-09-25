@@ -116,7 +116,8 @@ fi
 say "4/5 Copying keys from .env to GitHub Actions secrets"
 for k in OPENAI_API_KEY ALPACA_PAPER_KEY_ID ALPACA_PAPER_SECRET_KEY ALPACA_LIVE_KEY_ID \
          ALPACA_LIVE_SECRET_KEY TELEGRAM_BOT_TOKEN TELEGRAM_CHAT_ID FRED_API_KEY; do
-  v=$(grep -E "^${k}=" .env | tail -1 | cut -d= -f2- | sed -e 's/^["'\'']//' -e 's/["'\'']$//' || true)
+  v=$(grep -E "^${k}=" .env | tail -1 | cut -d= -f2- \
+      | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' -e 's/^["'\'']//' -e 's/["'\'']$//' || true)
   if [ -n "$v" ]; then
     printf '%s' "$v" | gh secret set "$k" --repo "$LOGIN/$REPO_NAME" >/dev/null && echo "  set $k"
   else
