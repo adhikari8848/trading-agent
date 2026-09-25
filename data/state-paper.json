@@ -1,0 +1,126 @@
+{
+  "halted_reason": null,
+  "holdings": {
+    "BTC/USD": {
+      "cost": 24.725093795999996,
+      "qty": 0.0002934
+    },
+    "ETH/USD": {
+      "cost": 24.771790063114004,
+      "qty": 0.009229093
+    },
+    "SOL/USD": {
+      "cost": 24.753957328000002,
+      "qty": 0.21121124
+    }
+  },
+  "last_run": {
+    "crypto": "2026-09-25T09:15:03+00:00"
+  },
+  "net_invested": 74.43707479513199,
+  "pending_orders": {
+    "1331f6c2-b370-49b6-9744-4043e58d3dc1": {
+      "client_order_id": "ta-2026-09-25-4-1c249e7b",
+      "limit": 502.56,
+      "placed_at": "2026-09-25T04:44:28+00:00",
+      "qty": 0.049745,
+      "rating": "Overweight",
+      "recorded_filled": 0.0,
+      "side": "buy",
+      "symbol": "MSFT",
+      "ticker": "MSFT"
+    },
+    "61d0430a-3ece-4df2-a29d-9c27a5fba7ee": {
+      "client_order_id": "ta-2026-09-25-5-7d7627cd",
+      "limit": 225.94,
+      "placed_at": "2026-09-25T04:44:28+00:00",
+      "qty": 0.110648,
+      "rating": "Overweight",
+      "recorded_filled": 0.0,
+      "side": "buy",
+      "symbol": "NVDA",
+      "ticker": "NVDA"
+    },
+    "d431bb01-5c57-4854-a9e2-1e7697c24b1e": {
+      "client_order_id": "ta-2026-09-25-3-132f95d0",
+      "limit": 353.87,
+      "placed_at": "2026-09-25T04:44:28+00:00",
+      "qty": 0.070647,
+      "rating": "Overweight",
+      "recorded_filled": 0.0,
+      "side": "buy",
+      "symbol": "AVGO",
+      "ticker": "AVGO"
+    }
+  },
+  "ratings_log": [
+    {
+      "kind": "crypto",
+      "price": 84620.111,
+      "rating": "Overweight",
+      "ticker": "BTC-USD",
+      "time": "2026-09-25T09:15:03+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 2695.04,
+      "rating": "Overweight",
+      "ticker": "ETH-USD",
+      "time": "2026-09-25T09:15:03+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 117.711,
+      "rating": "Overweight",
+      "ticker": "SOL-USD",
+      "time": "2026-09-25T09:15:03+00:00"
+    }
+  ],
+  "realized_pnl": 0.0,
+  "runs": {
+    "2026-09-24": "done"
+  },
+  "snapshots": [
+    {
+      "net_invested": 74.4371,
+      "pnl": 0.1251,
+      "scope": "crypto",
+      "time": "2026-09-25T09:15:03+00:00",
+      "value": 74.5622
+    }
+  ],
+  "spend": {
+    "2026-09-24": 0.481676,
+    "2026-09-25": 0.121206
+  },
+  "telegram_offset": 268796037,
+  "trades": [
+    {
+      "notional": 24.816,
+      "order_id": "b0b1ed79-5f07-4598-bcf6-bf97b37c1e99",
+      "price": 117.2,
+      "qty": 0.211740592,
+      "side": "buy",
+      "symbol": "SOL/USD",
+      "time": "2026-09-25T04:44:31+00:00"
+    },
+    {
+      "notional": 24.8339,
+      "order_id": "7e5a57d2-8136-4c12-b125-421d25791983",
+      "price": 2684.098,
+      "qty": 0.009252224,
+      "side": "buy",
+      "symbol": "ETH/USD",
+      "time": "2026-09-25T04:44:32+00:00"
+    },
+    {
+      "notional": 24.7872,
+      "order_id": "73d50ec3-c42d-4f58-84a3-64731a78de24",
+      "price": 84270.94,
+      "qty": 0.000294137,
+      "side": "buy",
+      "symbol": "BTC/USD",
+      "time": "2026-09-25T04:44:32+00:00"
+    }
+  ]
+}
