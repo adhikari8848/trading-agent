@@ -12,3 +12,6 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 .DS_Store
+# stray copies of the Claude Desktop config (contains keys)
+Support/
+claude_desktop_config.json*

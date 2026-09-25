@@ -157,12 +157,17 @@ def main(argv: list[str] | None = None) -> int:
     return 0
 
 
-if __name__ == "__main__":
-    sys.exit(main())
-
-
 def _report_to_github(res) -> None:
-    """One-glance results on the GitHub run page (no-op elsewhere)."""
+    """One-glance results on the GitHub run page (no-op elsewhere).
+    By the time this runs the trades and state are already done, so a problem here
+    must never turn a good run into a failed one."""
+    try:
+        _post_annotations(res)
+    except Exception as exc:  # noqa: BLE001
+        logging.getLogger("agent").warning("could not post GitHub summary: %s", exc)
+
+
+def _post_annotations(res) -> None:
     from .ci import annotate, in_actions, summary
 
     if not in_actions():
@@ -187,3 +192,8 @@ def _report_to_github(res) -> None:
                 summary(fh.read().split("## Full decisions")[0])
         except OSError:
             pass
+
+
+# Keep this last: everything above must be defined before main() runs.
+if __name__ == "__main__":
+    sys.exit(main())

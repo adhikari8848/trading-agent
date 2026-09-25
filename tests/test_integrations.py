@@ -289,3 +289,60 @@ def test_keys_with_stray_spaces_are_cleaned(make_settings, monkeypatch):
     s = load_settings(project_dir=s.project_dir)
     assert s.alpaca_key_id == "PKT123" and s.alpaca_secret == "sec"
     assert s.openai_api_key is None
+
+
+def _run_entry_point(monkeypatch, settings, result, argv):
+    """Run `python -m agent ...` exactly as GitHub does (the module run as __main__)."""
+    import runpy
+    import sys
+
+    import agent.runner
+    import agent.settings
+
+    monkeypatch.setattr(agent.settings, "load_settings", lambda *a, **k: settings)
+    monkeypatch.setattr(agent.runner, "run", lambda *a, **k: result)
+    monkeypatch.setattr(sys, "argv", ["agent", *argv])
+    with pytest.raises(SystemExit) as exc:
+        runpy.run_module("agent", run_name="__main__", alter_sys=True)
+    return exc.value.code
+
+
+def test_entry_point_finishes_a_run_on_github(make_settings, monkeypatch, capsys):
+    """Regression: `python -m agent run` crashed after a finished run with
+    NameError '_report_to_github' (helper defined below the __main__ block)."""
+    from agent.runner import RunResult
+
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+    monkeypatch.delenv("GITHUB_STEP_SUMMARY", raising=False)
+    res = RunResult(trade_date="2026-09-25", mode="paper", scope="crypto", ran=True,
+                    submitted=["BUY 0.1 SOL/USD"], holdings_value=75.0, pnl=0.6)
+    assert _run_entry_point(monkeypatch, make_settings(), res, ["run", "--scope", "crypto"]) == 0
+    out = capsys.readouterr().out
+    assert "::notice title=crypto run%3A ratings::" in out
+    assert "PLACED   BUY 0.1 SOL/USD" in out
+
+
+def test_github_summary_problems_never_fail_a_finished_run(make_settings, monkeypatch, capsys):
+    import agent.ci
+    from agent.runner import RunResult
+
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+
+    def broken(*a, **k):
+        raise RuntimeError("annotation boom")
+
+    monkeypatch.setattr(agent.ci, "annotate", broken)
+    res = RunResult(trade_date="2026-09-25", mode="paper", scope="crypto", ran=True)
+    assert _run_entry_point(monkeypatch, make_settings(), res, ["run", "--scope", "crypto"]) == 0
+
+
+def test_entry_point_block_is_last():
+    """Anything defined after `if __name__ == "__main__":` doesn't exist when main() runs."""
+    import ast
+    from pathlib import Path
+
+    import agent
+
+    tree = ast.parse((Path(agent.__file__).parent / "__main__.py").read_text())
+    last = tree.body[-1]
+    assert isinstance(last, ast.If) and "__main__" in ast.unparse(last.test)
