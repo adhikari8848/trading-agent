@@ -6,12 +6,18 @@ import sys
 
 import requests
 
+from .ci import annotate
 from .settings import Settings
 
 
-def _line(ok: bool | None, name: str, detail: str) -> bool:
+def _line(ok: bool | None, name: str, detail: str, public: str | None = None) -> bool:
+    """Print a check result. On GitHub it also becomes an annotation; `public` is the
+    text used there when `detail` holds anything that shouldn't be shown publicly."""
     mark = {True: "OK  ", False: "FAIL", None: "SKIP"}[ok]
     print(f"[{mark}] {name}: {detail}")
+    shown = public if public is not None else detail
+    annotate({True: "notice", False: "error", None: "notice"}[ok],
+             f"{mark.strip()} {name}", shown)
     return ok is not False
 
 
@@ -33,7 +39,7 @@ def run_doctor(s: Settings) -> bool:
 
     # OpenAI: list models (free call) and confirm the configured ones exist
     if not s.openai_api_key:
-        good &= _line(False, "OpenAI", "OPENAI_API_KEY missing in .env")
+        good &= _line(False, "OpenAI", "OPENAI_API_KEY missing (.env on a Mac, repo secret on GitHub)")
     else:
         try:
             r = requests.get("https://api.openai.com/v1/models", timeout=20,
@@ -53,7 +59,7 @@ def run_doctor(s: Settings) -> bool:
     from .broker import AlpacaBroker, BrokerError
     label = "Alpaca (LIVE)" if s.is_live else "Alpaca (paper)"
     if not (s.alpaca_key_id and s.alpaca_secret):
-        good &= _line(False, label, "keys missing in .env")
+        good &= _line(False, label, "keys missing (.env on a Mac, repo secrets on GitHub)")
     else:
         try:
             b = AlpacaBroker(s.alpaca_key_id, s.alpaca_secret, live=s.is_live)
@@ -88,7 +94,8 @@ def run_doctor(s: Settings) -> bool:
             d = r.json()
             if d.get("ok"):
                 if s.telegram_chat_id:
-                    good &= _line(True, "Telegram", f"bot @{d['result']['username']}, chat {s.telegram_chat_id}")
+                    good &= _line(True, "Telegram", f"bot @{d['result']['username']}, chat {s.telegram_chat_id}",
+                                  public="bot token and chat id work")
                 else:
                     good &= _line(False, "Telegram", "token works but TELEGRAM_CHAT_ID missing: "
                                                      "run  python -m agent telegram-setup")

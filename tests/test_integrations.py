@@ -253,3 +253,28 @@ def test_telegram_gives_up_after_retries():
     tg._sleep = lambda _: None
     with pytest.raises(TelegramError):
         tg.send("hello")
+
+
+def test_github_annotations(monkeypatch, capsys, tmp_path):
+    from agent.ci import annotate, summary
+
+    monkeypatch.delenv("GITHUB_ACTIONS", raising=False)
+    annotate("error", "FAIL Yahoo", "blocked")
+    assert capsys.readouterr().out == ""                       # silent on a Mac
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+    monkeypatch.setenv("GITHUB_STEP_SUMMARY", str(tmp_path / "sum.md"))
+    annotate("error", "FAIL Yahoo, data: x", "line1\nline2 100%")
+    out = capsys.readouterr().out
+    assert out == "::error title=FAIL Yahoo%2C data%3A x::line1%0Aline2 100%25\n"
+    summary("## hi")
+    assert (tmp_path / "sum.md").read_text() == "## hi\n\n"
+
+
+def test_doctor_hides_telegram_chat_id_in_annotations(monkeypatch, capsys):
+    from agent import doctor
+
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+    doctor._line(True, "Telegram", "bot @x, chat 6690001234", public="bot token and chat id work")
+    out = capsys.readouterr().out
+    assert "6690001234" in out.splitlines()[0]                  # log line (masked by GitHub)
+    assert "6690001234" not in out.splitlines()[1]              # public annotation

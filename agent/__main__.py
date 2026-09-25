@@ -131,9 +131,12 @@ def main(argv: list[str] | None = None) -> int:
         res = run(s, scope=args.scope, dry_run=args.dry_run, only=only, force=args.force,
                   wait_minutes=args.wait)
     except RunError as exc:
+        from .ci import annotate
+        annotate("error", "Run stopped", str(exc))
         logging.getLogger("agent").error("%s", exc)
         print(f"Run stopped: {exc}")
         return 1
+    _report_to_github(res)
     for a in res.analyses:
         print(f"{a.ticker:10s} {a.rating:12s} {a.summary[:100]}")
     for line in res.submitted:
@@ -156,3 +159,31 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
+
+def _report_to_github(res) -> None:
+    """One-glance results on the GitHub run page (no-op elsewhere)."""
+    from .ci import annotate, in_actions, summary
+
+    if not in_actions():
+        return
+    if not res.ran:
+        annotate("notice", "Nothing due", "; ".join(res.notes) or "this run already happened")
+        return
+    ratings = ", ".join(f"{a.ticker} {a.rating}" for a in res.analyses) or "none"
+    annotate("notice", f"{res.scope} run: ratings", ratings)
+    placed = "; ".join(res.submitted) or "no orders"
+    annotate("notice", "Orders", placed)
+    for a in res.analyses:
+        if a.rating == "ERROR":
+            annotate("error", f"{a.ticker} analysis failed", (a.error or a.summary)[:300])
+    for f in res.failed:
+        annotate("error", "Order failed", f)
+    annotate("notice", "Book", f"holdings ${res.holdings_value:,.2f}, P&L ${res.pnl:,.2f}, "
+                                f"OpenAI today ${res.spend_today:,.2f}")
+    if res.report_path:
+        try:
+            with open(res.report_path, encoding="utf-8") as fh:
+                summary(fh.read().split("## Full decisions")[0])
+        except OSError:
+            pass
