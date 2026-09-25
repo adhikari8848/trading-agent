@@ -1,10 +1,11 @@
-# Crypto (BTC, ETH, SOL) every 8 hours, 7 days a week.
-# Times are UTC: 00:15, 08:15, 16:15 = Melbourne 10:15am, 6:15pm, 2:15am (AEST; +1h in AEDT).
+# Crypto (BTC, ETH, SOL) every 4 hours, 7 days a week.
+# Times are UTC: 00:15, 04:15, 08:15, 12:15, 16:15, 20:15
+# = Melbourne 10:15am, 2:15pm, 6:15pm, 10:15pm, 2:15am, 6:15am (AEST; +1h in AEDT).
 name: crypto
 
 on:
   schedule:
-    - cron: "15 */8 * * *"
+    - cron: "15 */4 * * *"
 
 permissions:
   contents: write
