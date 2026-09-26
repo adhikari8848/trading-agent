@@ -358,3 +358,18 @@ DECISION:
 
 <!-- ENTRY_END -->
 
+[2026-09-26 | SOL-USD | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Gradually increase SOL-USD from its existing 0.2112-unit position toward approximately 0.75x a standard allocation, rather than deploying the full $349.45 cash balance or chasing the $121.22 close. Consider a small initial addition only if a pullback near $115.11 stabilizes; add toward 1.0x only after sustained closes above $124.82 with follow-through. Stop adding on a sustained break below $115.11 and reassess or reduce toward 0.5x or less if $107.89 is lost; size for the $4.88 daily ATR, possible slippage, and correlated BTC-USD and ETH-USD exposure.
+
+**Investment Thesis**: The constructive trend outweighs the case for indefinitely deferring an addition: SOL-USD closed at $121.22 after rising from $101.60, above its 10-day EMA ($115.11), 50-day SMA ($97.70), and 200-day SMA ($84.78), with positive MACD and a +1.14 histogram. But RSI of 68.27, proximity to the $124.82 upper Bollinger Band, and no demonstrated breakout follow-through temper conviction; a touch of the 10-day EMA alone is not proof of support. The proposed $107.89 reassessment level sits $7.22 below the $115.11 entry, roughly 1.5 times the $4.88 ATR, and cannot guarantee execution in a fast decline. Upgrade benefits, supply changes, institutional demand, and macro outcomes remain unconfirmed; volume, adoption, and token-demand confirmation are not supplied, while the small bullish social-media sample is weak evidence. These limitations favor a conditional, modest overweight rather than a high-conviction Buy; sustained failure below $115.11 or loss of $107.89 would undermine it.
+
+**Price Target**: not provided
+
+**Time Horizon**: not provided
+
+<!-- ENTRY_END -->
+
