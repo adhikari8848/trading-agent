@@ -328,3 +328,33 @@ DECISION:
 
 <!-- ENTRY_END -->
 
+[2026-09-26 | BTC-USD | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Gradually add a small amount of BTC-USD only after checking a live quote and refreshed technical levels; assess a pullback near the updated 10-day EMA for stabilization rather than placing an automatic order at the dated $82,650.57 reference. Start near 1.1× the standard BTC-USD allocation only if that allocation and a portfolio loss limit can be established, accounting for existing ETH-USD and SOL-USD exposure; otherwise maintain the current BTC-USD position until sizing is possible. Reserve an increase toward 1.25× for sustained follow-through above the refreshed equivalent of $86,965.92 and independently verified persistent ETF inflows. Reassess on a weeks-to-months horizon, with risk limits based on current volatility rather than an unchanged $79,500 stop.
+
+**Investment Thesis**: The stronger case is a modest BTC-USD overweight, not a full-conviction Buy: at the September 26, 2026 snapshot, BTC-USD closed at $83,967.55 above its 10-day EMA ($82,650.57), 50-day SMA ($75,321.61), and 200-day SMA ($70,928.73), with positive MACD and RSI of 63.89. The retreat from $86,602.91 and $2,336.67 ATR argue for patience and limited sizing but do not themselves establish a reversal. The conservative analyst correctly notes that the $82,650.57 entry and $79,500 stop are stale, support is unconfirmed, ETF-flow persistence and proposed corporate purchases are unverified, yield data are not independently verified, and the portfolio already has correlated crypto exposure. These cautions favor a conditional staged add, as the neutral analyst suggests, rather than negating the observed trend; mildly bullish, low-confidence sentiment is not a deciding factor. A sustained loss of the refreshed equivalent of the $79,956.35 Bollinger middle line or persistently negative verified ETF flows would prompt reducing BTC-USD toward or below its standard allocation; a sustained break below the refreshed equivalent of the $75,321.61 50-day SMA would require re-evaluating the bullish thesis. No live BTC-USD quote, daily ETF-flow series, standard allocation, total portfolio value, or defined risk budget is provided, so neither an executable order size nor a reliable price target can be specified.
+
+**Price Target**: not provided
+
+**Time Horizon**: Weeks to months
+
+<!-- ENTRY_END -->
+
+[2026-09-26 | ETH-USD | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Overweight ETH-USD, but do not place an order using the dated September 26 quote. Verify the current price and updated trend, then gradually add only if the short-term trend remains intact, up to approximately 1.25 times a defined standard allocation; size the addition against a predetermined dollar-loss budget, retain cash, and use no leverage. Pause additions on renewed rejection near $2,800 or a close below the updated short-term trend gauge; review a sustained loss of the reported ~$2,558 midpoint as a reason to reduce toward standard weight. This is a conditional, medium-term positioning decision, not a live-price trade instruction.
+
+**Investment Thesis**: The constructive case narrowly wins: the September 26 ETH-USD close of $2,688.98 exceeded its 10-day EMA ($2,645.66), 50-day SMA ($2,356.87), and 200-day SMA ($2,094.33), with positive MACD and RSI of 63.55. That supports a small, staged increase rather than requiring a breakout before any addition. Conviction is limited by repeated resistance near $2,800, reported $95.27 ATR, rising yields and October rate-event uncertainty, and the absence of a current quote or refreshed indicators. The reported on-chain signals are unquantified, social sentiment is based on a small sample, and the Bitget hack is a sector risk rather than evidence of an Ethereum protocol exploit. The existing 0.009229-unit ETH-USD position, alongside BTC-USD and SOL-USD, makes correlated crypto exposure relevant; the standard allocation and maximum acceptable dollar loss are undefined. The proposed $2,645.66 entry and $2,550.39 stop are dated reference levels, not executable instructions or guaranteed loss limits: slippage can worsen losses. A sustained break above $2,800 after updated risk review could justify further exposure, whereas deteriorating trend readings or a sustained loss of the approximately $2,558 midpoint would weaken the thesis.
+
+**Price Target**: not provided
+
+**Time Horizon**: not provided
+
+<!-- ENTRY_END -->
+
