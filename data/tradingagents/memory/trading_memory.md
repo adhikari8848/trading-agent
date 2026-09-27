@@ -403,3 +403,18 @@ DECISION:
 
 <!-- ENTRY_END -->
 
+[2026-09-27 | ETH-USD | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Favor a modest, conditional addition to ETH-USD, not a full-size Buy: if a current quote confirms the setup and ETH-USD trades near $2,665, stage approximately $100–$150 of the $348.68 cash, subject to combined ETH-USD, BTC-USD, and SOL-USD exposure limits. Do not chase toward $2,800; pause additions below the reported $2,664.58 10-day EMA and reassess or reduce exposure on sustained weakness near $2,540, recognizing a stop cannot guarantee execution. Consider a larger allocation only after a sustained breakout and hold above $2,800; this is a conditional near-term trading plan, not an unconditional order.
+
+**Investment Thesis**: The stronger, though narrow, case is constructive: the September 27 ETH-USD close of $2,708.18 was above the rising 10-day EMA ($2,664.58), 50-day SMA ($2,388.40), and 200-day SMA ($2,100.91), with modestly positive MACD and RSI of 64.75. Yet resistance around $2,800 offers just $135 per unit from the proposed $2,665 entry against $125 to the $2,540 risk level, approximately 1.1:1 before costs; the reported $90.05 ATR and crypto gaps make that risk level an imperfect stop. Existing ETH-USD, BTC-USD, and SOL-USD holdings, mixed low-confidence sentiment, uncertain macro conditions, and unproven tokenization-related ETH-USD value capture rule out an aggressive Buy but do not outweigh the trend enough to warrant waiting entirely. Sustained failure near $2,540 would weaken the thesis; a confirmed hold above $2,800 would strengthen it. No current quote, verified macro readings, or ETH-USD valuation framework was provided, so all stated levels must be checked before trading.
+
+**Price Target**: not provided
+
+**Time Horizon**: Near-term; reassess at $2,800 resistance or sustained weakness near $2,540
+
+<!-- ENTRY_END -->
+

@@ -27,7 +27,7 @@
     }
   },
   "last_run": {
-    "crypto": "2026-09-27T05:14:14+00:00",
+    "crypto": "2026-09-27T13:55:00+00:00",
     "stocks": "2026-09-26T00:47:37+00:00"
   },
   "net_invested": 149.09854752513198,
@@ -205,6 +205,27 @@
       "rating": "Overweight",
       "ticker": "SOL-USD",
       "time": "2026-09-27T05:14:14+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 84868.3,
+      "rating": "Overweight",
+      "ticker": "BTC-USD",
+      "time": "2026-09-27T13:55:00+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 2704.7,
+      "rating": "Overweight",
+      "ticker": "ETH-USD",
+      "time": "2026-09-27T13:55:00+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 122.9,
+      "rating": "Overweight",
+      "ticker": "SOL-USD",
+      "time": "2026-09-27T13:55:00+00:00"
     }
   ],
   "realized_pnl": 0.0,
@@ -254,13 +275,20 @@
       "scope": "crypto",
       "time": "2026-09-27T05:14:14+00:00",
       "value": 150.5665
+    },
+    {
+      "net_invested": 149.0985,
+      "pnl": 2.2177,
+      "scope": "crypto",
+      "time": "2026-09-27T13:55:00+00:00",
+      "value": 151.3162
     }
   ],
   "spend": {
     "2026-09-24": 0.481676,
     "2026-09-25": 0.121206,
     "2026-09-26": 0.550704,
-    "2026-09-27": 0.201164
+    "2026-09-27": 0.320186
   },
   "telegram_offset": 268796037,
   "trades": [
