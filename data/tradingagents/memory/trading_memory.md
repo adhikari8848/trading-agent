@@ -373,3 +373,33 @@ DECISION:
 
 <!-- ENTRY_END -->
 
+[2026-09-27 | BTC-USD | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: For BTC-USD, favor a modest, staged increase only if the current allocation is below the proposed 1.15–1.25× standard allocation and portfolio crypto-risk limits permit it. Verify the live price and allocation first; consider a small initial tranche near $82,972.09 only if the pullback stabilizes, with further additions contingent on follow-through above $87,449.48 or a stable hold near $80,160.41. Pause additions on a decisive loss of $80,160.41 and reassess exposure around $77,858.21; that proposed stop cannot guarantee execution. Reassess over the coming weeks to months.
+
+**Investment Thesis**: The constructive BTC-USD trend narrowly outweighs the case for waiting entirely: the reported $84,363.84 close is above its 10-day EMA, 50-day SMA and 200-day SMA, MACD is positive, and RSI of 64.87 remains constructive despite cooling. Reported weekly ETF inflows support demand but are not independently verified, while declining daily inflows, a price below the $87,449.48 breakout reference, the reported 64% prediction-market probability of an October rate hike, and correlated BTC-USD, ETH-USD and SOL-USD exposure argue against an aggressive Buy. A touch of the EMA is not confirmed support, and the $77,858.21 proposed stop is roughly 2.2 ATR below entry and may slip. Sustained weakness below $80,160.41, verified ETF outflows or stronger rate risk would weaken the thesis; sustained follow-through above $87,449.48 with continuing verified inflows would strengthen it. Current BTC-USD holdings are 0.0002934 units, but neither the portfolio's standard allocation nor a live quote is supplied, so an exact order size is not justified.
+
+**Price Target**: not provided
+
+**Time Horizon**: Coming weeks to months
+
+<!-- ENTRY_END -->
+
+[2026-09-27 | SOL-USD | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Overweight SOL-USD: retain the existing 0.2112 units and place only a small, staged limit addition near $115 rather than chase the $120.53 snapshot price. Aim initially for roughly 0.5× a standard crypto allocation across the existing position and additions, accounting for BTC-USD and ETH-USD exposure; retain substantial cash rather than deploy all $349.43. Reassess on a close below the $114.98 10-day EMA, treat $107.85 as a wider risk reference rather than a guaranteed stop, and consider further additions only after the upgrade and sustained strength; these levels are historical snapshot references, not live prices.
+
+**Investment Thesis**: The constructive trend wins narrowly: the supplied September 27 SOL-USD close of $120.53 is above the $114.98 10-day EMA, $97.69 50-day SMA and $84.78 200-day SMA, and MACD is above its signal. This favors measured incremental exposure over deferring all purchases, particularly because a limit near $115 avoids chasing and the current position already participates if no order fills. It does not warrant a strong-conviction Buy: SOL-USD rose roughly 24% since September 15, RSI is 67.14, ATR is $4.85, and the recent reversal and uncertain Alpenglow impact raise pullback and sell-the-news risk. The $124.68 upper Bollinger band implies only a modest illustrative upside relative to a $107.85 downside reference from a $115 entry, with no guaranteed fills or support. Bullish StockTwits direction tags are a small, low-confidence sample; upgrade, issuance and outreach reports have not established durable token demand, while cited macro risks are unverified. A sustained post-upgrade move above the recent $122.01–$122.75 area would support adding; a close below the 10-day EMA, a deeper move toward $107.85, or a disappointing upgrade would undermine the thesis. No verified current price or event outcome is provided.
+
+**Price Target**: not provided
+
+**Time Horizon**: not provided
+
+<!-- ENTRY_END -->
+
