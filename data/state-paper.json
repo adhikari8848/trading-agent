@@ -1,6 +1,10 @@
 {
   "halted_reason": null,
   "holdings": {
+    "AAPL": {
+      "cost": 24.655761096000003,
+      "qty": 0.073146
+    },
     "ABBV": {
       "cost": 24.778204872,
       "qty": 0.093661
@@ -31,23 +35,11 @@
     }
   },
   "last_run": {
-    "crypto": "2026-09-29T10:38:50+00:00",
+    "crypto": "2026-09-29T18:03:51+00:00",
     "stocks": "2026-09-29T02:12:55+00:00"
   },
-  "net_invested": 173.87675239713198,
-  "pending_orders": {
-    "471caf50-7727-4186-a48f-cb68a75a89c8": {
-      "client_order_id": "ta-202609291212-0-efbef701",
-      "limit": 341.78,
-      "placed_at": "2026-09-29T02:38:45+00:00",
-      "qty": 0.073146,
-      "rating": "Overweight",
-      "recorded_filled": 0.0,
-      "side": "buy",
-      "symbol": "AAPL",
-      "ticker": "AAPL"
-    }
-  },
+  "net_invested": 198.53251349313197,
+  "pending_orders": {},
   "ratings_log": [
     {
       "kind": "crypto",
@@ -370,6 +362,27 @@
       "rating": "Overweight",
       "ticker": "SOL-USD",
       "time": "2026-09-29T10:38:50+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 83226.86,
+      "rating": "Overweight",
+      "ticker": "BTC-USD",
+      "time": "2026-09-29T18:03:51+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 2677.04,
+      "rating": "Overweight",
+      "ticker": "ETH-USD",
+      "time": "2026-09-29T18:03:51+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 118.099,
+      "rating": "Overweight",
+      "ticker": "SOL-USD",
+      "time": "2026-09-29T18:03:51+00:00"
     }
   ],
   "realized_pnl": 0.0,
@@ -462,6 +475,13 @@
       "scope": "crypto",
       "time": "2026-09-29T10:38:50+00:00",
       "value": 175.3371
+    },
+    {
+      "net_invested": 198.5325,
+      "pnl": -0.0392,
+      "scope": "crypto",
+      "time": "2026-09-29T18:03:51+00:00",
+      "value": 198.4934
     }
   ],
   "spend": {
@@ -470,7 +490,8 @@
     "2026-09-26": 0.550704,
     "2026-09-27": 0.320186,
     "2026-09-28": 0.117982,
-    "2026-09-29": 0.727232
+    "2026-09-29": 0.727232,
+    "2026-09-30": 0.119789
   },
   "telegram_offset": 268796037,
   "trades": [
@@ -536,6 +557,15 @@
       "side": "buy",
       "symbol": "ABBV",
       "time": "2026-09-28T16:44:13+00:00"
+    },
+    {
+      "notional": 24.6558,
+      "order_id": "471caf50-7727-4186-a48f-cb68a75a89c8",
+      "price": 337.076,
+      "qty": 0.073146,
+      "side": "buy",
+      "symbol": "AAPL",
+      "time": "2026-09-29T18:03:52+00:00"
     }
   ]
 }
