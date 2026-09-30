@@ -35,7 +35,7 @@
     }
   },
   "last_run": {
-    "crypto": "2026-09-29T18:03:51+00:00",
+    "crypto": "2026-09-30T05:27:54+00:00",
     "stocks": "2026-09-30T01:26:57+00:00"
   },
   "net_invested": 198.53251349313197,
@@ -451,6 +451,27 @@
       "rating": "Overweight",
       "ticker": "BHP.AX",
       "time": "2026-09-30T01:26:57+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 83256.645,
+      "rating": "Overweight",
+      "ticker": "BTC-USD",
+      "time": "2026-09-30T05:27:54+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 2669.5,
+      "rating": "Overweight",
+      "ticker": "ETH-USD",
+      "time": "2026-09-30T05:27:54+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 119.019,
+      "rating": "Overweight",
+      "ticker": "SOL-USD",
+      "time": "2026-09-30T05:27:54+00:00"
     }
   ],
   "realized_pnl": 0.0,
@@ -558,6 +579,13 @@
       "scope": "stocks",
       "time": "2026-09-30T01:26:57+00:00",
       "value": 198.6452
+    },
+    {
+      "net_invested": 198.5325,
+      "pnl": -0.0193,
+      "scope": "crypto",
+      "time": "2026-09-30T05:27:54+00:00",
+      "value": 198.5132
     }
   ],
   "spend": {
@@ -567,7 +595,7 @@
     "2026-09-27": 0.320186,
     "2026-09-28": 0.117982,
     "2026-09-29": 0.727232,
-    "2026-09-30": 0.413249
+    "2026-09-30": 0.533437
   },
   "telegram_offset": 268796037,
   "trades": [
