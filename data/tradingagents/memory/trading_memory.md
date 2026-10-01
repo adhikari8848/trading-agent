@@ -907,3 +907,48 @@ DECISION:
 
 <!-- ENTRY_END -->
 
+[2026-10-01 | BTC-USD | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: For BTC-USD, favor a modest, conditional increase rather than an aggressive buy: verify the current quote and indicators, then consider one small tranche near the cited $83,506 entry without chasing a higher price. Size against total BTC-USD, ETH-USD, and SOL-USD exposure and portfolio risk limits; the standard allocation is unknown, so no dollar or unit purchase is specified. Treat $81,300 as a proposed exit level for a new tranche, not a guaranteed stop, and review the thesis over the coming weeks to months.
+
+**Investment Thesis**: The October 1, 2026 BTC-USD close of $84,187.36 was above its 10-day EMA ($83,505.82), 50-day SMA ($77,284.66), and 200-day SMA ($71,265.91); RSI of 62.87 and a reported roughly 45% quarterly rise favor the trend-following, small-addition case over waiting for perfect confirmation. That evidence supports Overweight rather than Buy because repeated failures to hold $85,000, MACD below its signal with a negative histogram, uncertain ETF flows and rates, and weak, concentrated sentiment leave breakout demand unverified. The proposed $81,300 stop is roughly 1.05 times the $2,107 ATR below entry and near the Bollinger middle line, so routine volatility or slippage could trigger a worse exit; it must govern tranche size rather than imply contained loss. Pause additions if BTC-USD loses the cited 10-day EMA, and reassess or trim if it loses the 50-day SMA; sustained closes above $85,000 with improving MACD and verified spot demand or ETF flows would justify considering further additions. All prices and indicators are historical, not a current executable quote. The prior NDQ.AX lesson cautions that five-day momentum does not establish a weeks-to-months thesis, so review sustained technical signals rather than judging this decision on a few sessions.
+
+**Price Target**: not provided
+
+**Time Horizon**: Several weeks to months
+
+<!-- ENTRY_END -->
+
+[2026-10-01 | ETH-USD | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: For ETH-USD, modestly increase exposure, not an aggressive Buy: consider a $75–$100 initial tranche near $2,676.06 only if price holds there, and leave the rest of the $312.55 cash uncommitted. Keep total ETH-USD exposure near 1.1x the portfolio's standard allocation, which is not specified; do not target 1.25x without stronger momentum and sustained flow confirmation. For the new tranche, use $2,525 as a risk-exit reference rather than a guaranteed fill; pause additions on a persistent loss of $2,676.06 and reassess or trim if $2,611.66 breaks alongside continued outflows. Review over the coming weeks as current prices, flows, and network evidence become available.
+
+**Investment Thesis**: The constructive case wins narrowly: ETH-USD's supplied October 1 close of $2,713.30 exceeds its 10-day EMA ($2,676.06), Bollinger middle band ($2,611.66), 50-day SMA ($2,436.32), and 200-day SMA ($2,109.89), while RSI of 64.41 signals positive but not conventionally overbought momentum. The negative MACD histogram, reported 3.32% weekly decline, and September 29 $2.81 million ETF outflow temper the entry, but neither a soft week nor a single outflow establishes a reversal. The conservative analyst correctly notes that moving averages are not proven support and that BTC-USD and SOL-USD add correlated portfolio risk; the neutral analyst's staged $75–$100 tranche limits incremental exposure, with approximately $4.20–$5.60 of planned entry-to-$2,525 price risk before fees or slippage. Rising-yield sensitivity, unverified upgrade and accumulation narratives, unknown current flows and prices, and the absence of validated adoption or token-value-capture data rule out stronger conviction. In keeping with the prior cross-ticker lessons, a few days of price action alone should not settle a weeks-long thesis: review sustained trend, momentum, and verified flows before increasing or reversing exposure.
+
+**Price Target**: not provided
+
+**Time Horizon**: Several weeks to 3 months
+
+<!-- ENTRY_END -->
+
+[2026-10-01 | SOL-USD | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Favor a modest, conditional increase in SOL-USD, but retain the existing 0.2112 units and do not buy merely on an intraday move above $124.62. Consider a small addition only after a daily close above $124.62 with improving MACD histogram, then stage further purchases if the breakout holds; cap total SOL-USD exposure at 1.1x standard allocation and first define a dollar-loss limit that accounts for existing BTC-USD and ETH-USD exposure. Pause additions and review on a close below the $117.64 10-day EMA; materially trim and reassess after a sustained break below the $101.21 50-day SMA, over a weeks-to-months horizon.
+
+**Investment Thesis**: The constructive case narrowly prevails: at the cited $119.39, SOL-USD trades above its $117.64 10-day EMA, $101.21 50-day SMA and $85.43 200-day SMA, and MACD remains positive. That supports a capped overweight rather than the conservative analyst’s indefinite deferral, but the histogram’s fall from +1.18 to +0.17 and the unbroken $124.62 prior high make the trader’s $124.63 trigger insufficient on its own. Reported $188 million weekly ETF inflows are neither independently verified nor evidence of persistent demand; there are no supplied on-chain adoption figures. Higher-yield macro risk, correlated crypto holdings and $4.66 ATR warrant restrained sizing. The proposed $117.64 exit is $6.99 below $124.63, about 1.5 ATR, and may slip in a fast market. A sustained breakout with renewed momentum would strengthen the case for additions; a failed breakout or sustained loss of the 50-day SMA would weaken it. Prior five-day cross-ticker outcomes are too short to validate a weeks-to-months thesis, so review sustained technical signals rather than brief price noise. Standard allocation and a portfolio-wide risk budget are not supplied, so an exact unit purchase or dollar-loss cap cannot be specified.
+
+**Price Target**: not provided
+
+**Time Horizon**: Weeks to months
+
+<!-- ENTRY_END -->
+
