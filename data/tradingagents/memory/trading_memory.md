@@ -73,7 +73,7 @@ DECISION:
 
 <!-- ENTRY_END -->
 
-[2026-09-24 | BTC-USD | Overweight | pending]
+[2026-09-24 | BTC-USD | Overweight | -0.9% | -0.1% | 5d | resolved:2026-09-29]
 
 DECISION:
 **Rating**: Overweight
@@ -86,9 +86,12 @@ DECISION:
 
 **Time Horizon**: not provided
 
+REFLECTION:
+BTC’s 5-day alpha was -0.1%, a slight underperformance that does not meaningfully confirm the Overweight call; five trading days is too short to judge the thesis. The pullback modestly undercuts near-term momentum, but does not establish that the constructive trend thesis has failed. Next time, define in advance what sustained price action and time span would validate a breakout before adding to a starter position.
+
 <!-- ENTRY_END -->
 
-[2026-09-24 | ETH-USD | Overweight | pending]
+[2026-09-24 | ETH-USD | Overweight | -0.4% | +0.4% | 5d | resolved:2026-09-29]
 
 DECISION:
 **Rating**: Overweight
@@ -101,9 +104,12 @@ DECISION:
 
 **Time Horizon**: 3–6 months
 
+REFLECTION:
+ETH’s +0.4% five-day alpha supports the relative-overweight call despite a -0.4% raw return, but five days is too short to judge the 3–6 month thesis. The relative gain is consistent with the trend-continuation rationale, but it does not show that the $2,776–$2,800 resistance was reclaimed and held. Next time, evaluate a conditional setup against its stated price trigger as well as its horizon, and verify the reclaim before entering.
+
 <!-- ENTRY_END -->
 
-[2026-09-24 | SOL-USD | Overweight | pending]
+[2026-09-24 | SOL-USD | Overweight | +1.7% | +2.7% | 5d | resolved:2026-09-29]
 
 DECISION:
 **Rating**: Overweight
@@ -115,6 +121,9 @@ DECISION:
 **Price Target**: not provided
 
 **Time Horizon**: Near-term tactical; reassess as entry and risk conditions develop
+
+REFLECTION:
+SOL’s five-day alpha of +2.7% supports the Overweight directional call, though the window is too short to judge the broader thesis. The relative strength supports the near-term momentum case, but does not validate the conditional entry levels or claims about durable usage and token demand. Next time, record whether an entry trigger actually fired and assess the trade from that trigger, separately from the view’s return over the full window.
 
 <!-- ENTRY_END -->
 
