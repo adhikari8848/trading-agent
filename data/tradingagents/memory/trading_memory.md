@@ -196,7 +196,7 @@ The 5-day alpha of -0.0% is effectively flat, offering no evidence for the under
 
 <!-- ENTRY_END -->
 
-[2026-09-25 | BTC-USD | Overweight | pending]
+[2026-09-25 | BTC-USD | Overweight | -0.6% | -0.7% | 5d | resolved:2026-09-30]
 
 DECISION:
 **Rating**: Overweight
@@ -209,9 +209,12 @@ DECISION:
 
 **Time Horizon**: Coming weeks to months, subject to updated market checks
 
+REFLECTION:
+BTC’s 5-day alpha was -0.7%, underperforming SPY and mildly against the Overweight call, but five days is too short to judge a thesis framed for weeks to months. This window undercuts the near-term bullish momentum behind staged additions, but does not by itself invalidate the longer-term trend evidence. Next time, treat five-day performance as an execution check and require a fresh trend and demand review before increasing exposure.
+
 <!-- ENTRY_END -->
 
-[2026-09-25 | ETH-USD | Overweight | pending]
+[2026-09-25 | ETH-USD | Overweight | -0.3% | -0.3% | 5d | resolved:2026-09-30]
 
 DECISION:
 **Rating**: Overweight
@@ -224,9 +227,12 @@ DECISION:
 
 **Time Horizon**: Several weeks to a few months, subject to refreshed market data
 
+REFLECTION:
+The five-day alpha was -0.3%, modestly against the Overweight call, but five sessions are too short to judge a several-week-to-month ETH thesis. It mildly undercuts near-term momentum confidence but does not test the stated support or breakout conditions. Next time, set a separate short-term checkpoint and add only after refreshed prices confirm stabilization or a breakout.
+
 <!-- ENTRY_END -->
 
-[2026-09-25 | SOL-USD | Overweight | pending]
+[2026-09-25 | SOL-USD | Overweight | -3.3% | -3.4% | 5d | resolved:2026-09-30]
 
 DECISION:
 **Rating**: Overweight
@@ -238,6 +244,9 @@ DECISION:
 **Price Target**: not provided
 
 **Time Horizon**: not provided
+
+REFLECTION:
+The 5-day alpha of -3.4% shows the Overweight call underperformed SPY, but five days is too short to judge the longer-term thesis. The decline undercuts the near-term continuation case and supports caution on timing, while saying little about durable network demand or Alpenglow progress. For similar setups, separate the short-term review window from the thesis horizon and require the stated close-and-hold trigger before adding.
 
 <!-- ENTRY_END -->
 
