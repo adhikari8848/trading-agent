@@ -1105,3 +1105,48 @@ DECISION:
 
 <!-- ENTRY_END -->
 
+[2026-10-02 | BTC-USD | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Favor a modest, conditional increase in BTC-USD over 1–3 months, not a market-price chase. Keep the existing 0.0002934 units and consider an unleveraged first addition of no more than roughly $50 of the $311.71 cash only after a pullback toward $83,926 holds and rebounds, or a daily close above $87,363.76 followed by a second close above that level with improving MACD; do not automatically scale to an undefined standard allocation. Pause additions after a close below $83,926 that is not promptly reclaimed; treat $81,600 as a trade reassessment level rather than a guaranteed stop fill, and revisit the overweight case if $77,731 breaks.
+
+**Investment Thesis**: The bullish case wins narrowly: the supplied October 2 close of $86,335.48 exceeds the 10-day EMA ($83,926.06), 50-day SMA ($77,730.65), and 200-day SMA ($71,330.47), with rising longer-term averages. The conservative and neutral analysts correctly flag that the $87,363.76 prior high is unbroken, RSI is 68.23, the MACD histogram is slightly negative, and the $2,303.26 daily ATR makes the trader's $81,600 stop approximately one ATR below the proposed $83,926 entry, vulnerable to routine volatility and slippage. Existing ETH-USD, SOL-USD, and technology exposure, together with absent flow data and an unspecified standard allocation, support a small, risk-budgeted addition rather than the aggressive analyst's immediate buy or a full 1.1–1.25-times allocation. The previous BTC-USD Overweight returned roughly -0.1% five-day alpha, too short or small a result to invalidate the trend but a reason to require defined breakout follow-through before adding; missing current quotes mean these are conditional levels, not executable current-price instructions. Sustained momentum deterioration or a failed EMA reclaim argues for stopping additions or trimming, and a break of the 50-day SMA would materially weaken the thesis.
+
+**Price Target**: not provided
+
+**Time Horizon**: 1–3 months
+
+<!-- ENTRY_END -->
+
+[2026-10-02 | ETH-USD | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Favor a modest, conditional increase in ETH-USD, not an immediate market buy. Verify the live price and indicators; if a sustained close clears the historical $2,776.47 resistance and the trend remains constructive, consider a small, unlevered $25–$50 starter addition from $311.71 cash, with further additions contingent on the breakout holding and total BTC-USD/SOL-USD/ETH-USD risk staying within a defined portfolio limit. Reassess additions on a loss of the updated short-term average and consider trimming on sustained weakness below the updated middle Bollinger band; review over 3–6 months.
+
+**Investment Thesis**: The October 2 ETH-USD close of $2,725.01 stood above rising 10-, 50- and 200-day averages and the Bollinger middle band; RSI of 65.44 and the roughly 13.6% gain since September 15 favor trend continuation. This makes a restrained positive call stronger than simply retaining the existing 0.009229-unit position, but does not justify an unconditional Buy: the close remained below the September 21 $2,776.47 closing high, MACD was below its signal, and the small bullish sentiment sample and unverified macro or ETH-USD-specific news provide little corroboration. The proposed $2,680.55 EMA reference lies $95.92 below breakout entry, roughly one $88.41 daily ATR, so it is a reassessment level rather than a guaranteed stop; slippage and greater crypto moves remain possible. The cited $2,620.69 middle band would mark further trend deterioration. Existing BTC-USD and SOL-USD positions argue against automatically reaching 1.1–1.25 times a standard crypto allocation, particularly without an account-wide risk budget. Prior five-day ETH-USD alpha of +0.4% was mildly supportive but neither proved a sustained resistance reclaim nor tested the 3–6-month thesis. All quoted thresholds and indicators are historical, not live prices; an updated failed breakout or persistent trend deterioration would negate the case for adding.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3–6 months
+
+<!-- ENTRY_END -->
+
+[2026-10-02 | SOL-USD | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Overweight SOL-USD conditionally: retain the existing 0.2112 units and do not buy at the reported 122.57 close. Consider an initial add of at most roughly $35–$45 only if a pullback near 118.33 stabilizes; alternatively, reassess a small add after a daily close above 123.38 that holds, without chasing a sharp rise. Set the add's maximum acceptable dollar loss before ordering, using 112.43 as a reassessment/stop reference rather than a guaranteed exit; pause additions below 118.33 and consider trimming on a sustained break below 112.43. Reassess over the next several weeks, accounting for the 4.96 ATR and existing BTC-USD and ETH-USD exposure.
+
+**Investment Thesis**: The constructive trend narrowly beats the case for inaction: SOL-USD rose from 100.39 on September 2 to 122.57 on October 2, remains above its 118.33 10-day EMA and 102.12 50-day SMA, and MACD is still above its signal. The conservative analyst's objections limit conviction rather than overturning that trend: RSI is 66.44, the MACD histogram is only 0.11, resistance at 123.38 remains unconfirmed, and a pullback to an average could signal deterioration instead of support. The existing holding makes waiting for stabilization sensible; at 118.33, the 112.43 risk reference is 5.90 per unit, about 1.2 ATR, so size any add to a predetermined dollar-loss limit while allowing for crypto slippage and correlated exposure. The 130.36 upper Bollinger band is not a reliable target, and missing SOL-USD-specific usage, news, volume, and verified macro evidence prevent a stronger Buy; small-sample sentiment and market-implied Fed odds are not confirmation. The prior SOL-USD Overweight call's +2.7% five-day alpha supports direction only, not whether its conditional entry triggered or whether longer-term token demand is durable. A held breakout above 123.38 would strengthen the case; sustained weakness below 112.43 would undermine it.
+
+**Price Target**: not provided
+
+**Time Horizon**: Several weeks; reassess at entry, breakout, and risk levels
+
+<!-- ENTRY_END -->
+
