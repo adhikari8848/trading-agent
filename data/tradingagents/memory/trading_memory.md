@@ -1294,3 +1294,18 @@ DECISION:
 
 <!-- ENTRY_END -->
 
+[2026-10-03 | BTC-USD | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Favor a modest, staged increase in BTC-USD over the coming weeks to months, not an immediate full-sized buy. First verify a current quote, portfolio value, standard BTC-USD allocation, aggregate crypto exposure, and acceptable dollar loss; add only if price holds the dated $83,819 10-day EMA reference and momentum stabilizes. Use no leverage, retain cash, pause additions on sustained weakness below that EMA, and reduce or reassess exposure if BTC-USD sustains a break below the $78,124 50-day SMA; these are review levels, not guaranteed execution prices.
+
+**Investment Thesis**: The constructive trend narrowly outweighs the case for deferring all additions: BTC-USD closed at $84,551.59 on 2026-10-03, above its 10-day EMA ($83,819.28), 50-day SMA ($78,123.99), and 200-day SMA ($71,371.51); MACD remained positive and RSI was 63.19. The conservative analyst correctly flags that the roughly 11.8% rebound from September 15 has not produced a confirmed breakout, the MACD histogram is negative, and the close sits just $732 above the EMA against roughly $2,095 daily ATR. The suggested $83,819.28 entry to $78,123.99 risk reference spans about $5,695, or 6.8%, and a stop cannot cap losses in a fast market. A small tagged sentiment sample does not validate demand, while current macro, adoption, and flow evidence and the standard portfolio allocation are unavailable; existing ETH-USD and SOL-USD holdings add correlated risk. These limits argue for a conditional Overweight rather than a strong Buy or an unconditional order: aim toward roughly 1.1–1.25 times standard BTC-USD allocation only if risk limits and subsequent price action permit. Prior BTC-USD Overweight calls had mildly negative five-day alpha (-0.7% and -0.1%); those short windows do not disprove a weeks-to-months trend thesis but reinforce requiring a fresh price and demand check before increasing exposure. A sustained 50-day SMA break would weaken the thesis; sustained price strength with stabilizing momentum and verified demand would support further additions.
+
+**Price Target**: not provided
+
+**Time Horizon**: Coming weeks to months
+
+<!-- ENTRY_END -->
+
