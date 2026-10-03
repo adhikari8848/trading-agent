@@ -36,10 +36,22 @@
   },
   "last_run": {
     "crypto": "2026-10-02T14:43:05+00:00",
-    "stocks": "2026-10-02T01:46:50+00:00"
+    "stocks": "2026-10-03T01:20:11+00:00"
   },
   "net_invested": 174.36614074913197,
-  "pending_orders": {},
+  "pending_orders": {
+    "ca758391-1d6a-4675-be5b-daceaadff13a": {
+      "client_order_id": "ta-202610031120-0-63531090",
+      "limit": 265.54,
+      "placed_at": "2026-10-03T01:47:17+00:00",
+      "qty": 0.047128,
+      "rating": "Overweight",
+      "recorded_filled": 0.0,
+      "side": "buy",
+      "symbol": "ABBV",
+      "ticker": "ABBV"
+    }
+  },
   "ratings_log": [
     {
       "kind": "crypto",
@@ -677,6 +689,62 @@
       "rating": "Overweight",
       "ticker": "SOL-USD",
       "time": "2026-10-02T14:43:05+00:00"
+    },
+    {
+      "kind": "us_stock",
+      "price": 234.0,
+      "rating": "Overweight",
+      "ticker": "NVDA",
+      "time": "2026-10-03T01:20:11+00:00"
+    },
+    {
+      "kind": "us_stock",
+      "price": 355.125,
+      "rating": "Hold",
+      "ticker": "AVGO",
+      "time": "2026-10-03T01:20:11+00:00"
+    },
+    {
+      "kind": "us_stock",
+      "price": 517.32,
+      "rating": "Overweight",
+      "ticker": "MSFT",
+      "time": "2026-10-03T01:20:11+00:00"
+    },
+    {
+      "kind": "us_stock",
+      "price": 333.75,
+      "rating": "Hold",
+      "ticker": "AAPL",
+      "time": "2026-10-03T01:20:11+00:00"
+    },
+    {
+      "kind": "us_stock",
+      "price": 262.915,
+      "rating": "Overweight",
+      "ticker": "ABBV",
+      "time": "2026-10-03T01:20:11+00:00"
+    },
+    {
+      "kind": "asx",
+      "price": null,
+      "rating": "Overweight",
+      "ticker": "NDQ.AX",
+      "time": "2026-10-03T01:20:11+00:00"
+    },
+    {
+      "kind": "asx",
+      "price": null,
+      "rating": "Underweight",
+      "ticker": "CBA.AX",
+      "time": "2026-10-03T01:20:11+00:00"
+    },
+    {
+      "kind": "asx",
+      "price": null,
+      "rating": "Underweight",
+      "ticker": "BHP.AX",
+      "time": "2026-10-03T01:20:11+00:00"
     }
   ],
   "realized_pnl": -0.13627656800000235,
@@ -686,7 +754,8 @@
     "stocks:2026-09-28": "done",
     "stocks:2026-09-29": "done",
     "stocks:2026-09-30": "done",
-    "stocks:2026-10-01": "done"
+    "stocks:2026-10-01": "done",
+    "stocks:2026-10-02": "done"
   },
   "snapshots": [
     {
@@ -842,6 +911,13 @@
       "scope": "crypto",
       "time": "2026-10-02T14:43:05+00:00",
       "value": 177.7266
+    },
+    {
+      "net_invested": 174.3661,
+      "pnl": 1.8719,
+      "scope": "stocks",
+      "time": "2026-10-03T01:20:11+00:00",
+      "value": 176.238
     }
   ],
   "spend": {
@@ -854,7 +930,7 @@
     "2026-09-30": 0.533437,
     "2026-10-01": 0.59873,
     "2026-10-02": 0.614661,
-    "2026-10-03": 0.127245
+    "2026-10-03": 0.489782
   },
   "telegram_offset": 268796037,
   "trades": [

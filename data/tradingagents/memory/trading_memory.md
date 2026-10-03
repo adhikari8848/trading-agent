@@ -250,7 +250,7 @@ The 5-day alpha of -3.4% shows the Overweight call underperformed SPY, but five 
 
 <!-- ENTRY_END -->
 
-[2026-09-25 | NVDA | Overweight | pending]
+[2026-09-25 | NVDA | Overweight | +nan% | +nan% | 5d | resolved:2026-10-02]
 
 DECISION:
 **Rating**: Overweight
@@ -263,9 +263,12 @@ DECISION:
 
 **Time Horizon**: 3–6 months, subject to subsequent results
 
+REFLECTION:
+The 5-day alpha is reported as +nan%, so there is no measurable result to judge the Overweight call; this window is too short to assess the 3–6 month thesis. It neither supports nor undercuts the thesis, and provides no evidence that NVDA sustained the $228.87 breakout needed to trigger an addition. Next time, verify dated price and benchmark data before evaluating performance or acting on a conditional entry.
+
 <!-- ENTRY_END -->
 
-[2026-09-25 | AVGO | Hold | pending]
+[2026-09-25 | AVGO | Hold | +nan% | +nan% | 5d | resolved:2026-10-02]
 
 DECISION:
 **Rating**: Hold
@@ -278,9 +281,12 @@ DECISION:
 
 **Time Horizon**: 1–3 months to reassessment
 
+REFLECTION:
+The reported 5-day alpha versus SPY is +nan%, so it provides no usable evidence about the Hold call’s direction; this window is too short to judge the 1–3-month thesis. It neither supports nor undercuts the thesis because it offers no valid price signal and does not test the fundamentals, AI execution, or valuation at its core. Next time, verify that return and benchmark data are valid before drawing conclusions from short-term performance.
+
 <!-- ENTRY_END -->
 
-[2026-09-25 | MSFT | Overweight | pending]
+[2026-09-25 | MSFT | Overweight | +nan% | +nan% | 5d | resolved:2026-10-02]
 
 DECISION:
 **Rating**: Overweight
@@ -293,9 +299,12 @@ DECISION:
 
 **Time Horizon**: 6–12 months
 
+REFLECTION:
+The 5-day alpha versus SPY is +nan%, so the directional call cannot be assessed from this result; in any case, five days is too short to judge a 6–12-month thesis. This window provides no evidence for or against the thesis that AI/Azure monetization and free-cash-flow conversion will justify the higher capex. Next time, verify that the evaluation data are valid and judge the thesis over its stated horizon, while treating short-term price triggers separately.
+
 <!-- ENTRY_END -->
 
-[2026-09-25 | AAPL | Sell | pending]
+[2026-09-25 | AAPL | Sell | +nan% | +nan% | 5d | resolved:2026-10-02]
 
 DECISION:
 **Rating**: Sell
@@ -308,9 +317,12 @@ DECISION:
 
 **Time Horizon**: 3–6 months, with earlier review upon new evidence
 
+REFLECTION:
+The 5-day alpha versus SPY is +nan% (raw return +nan%), so it offers no usable evidence on the avoid-entry call; five days is too short to judge the 3–6-month thesis. This window neither supports nor undercuts the concerns about unverified demand, AI monetization, and valuation. Next time, confirm the return and benchmark data before drawing any conclusion from short-window performance.
+
 <!-- ENTRY_END -->
 
-[2026-09-25 | ABBV | Overweight | pending]
+[2026-09-25 | ABBV | Overweight | +nan% | +nan% | 5d | resolved:2026-10-02]
 
 DECISION:
 **Rating**: Overweight
@@ -322,6 +334,9 @@ DECISION:
 **Price Target**: not provided
 
 **Time Horizon**: 3–6 months, reviewed after the next earnings release
+
+REFLECTION:
+The 5-day alpha is +nan%, so there is no valid directional evidence; this window is also too short to judge a 3–6-month thesis. It neither supports nor undercuts the fundamental case or the conditional-entry plan, and does not test whether cash conversion improves or net debt falls. For the next similar review, confirm return data is valid and assess the thesis against its stated horizon rather than infer performance from a missing short-window result.
 
 <!-- ENTRY_END -->
 
@@ -1156,6 +1171,126 @@ DECISION:
 **Price Target**: not provided
 
 **Time Horizon**: Several weeks; reassess at entry, breakout, and risk levels
+
+<!-- ENTRY_END -->
+
+[2026-10-02 | NVDA | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Favor a small, staged addition to the existing 0.1106-unit NVDA position, preferably on a pullback toward the dated $226.43 reference rather than chasing the $230.86 October 1 close. Confirm a current quote, the availability of the supplied financial results, and portfolio allocation limits before trading; do not prescribe an exact unit purchase or advance to 1.1–1.25× standard weight without those checks. Treat a sustained loss of $217.61 as a risk-review trigger, not a guaranteed stop, and reassess over 3–6 months as results clarify cash conversion.
+
+**Investment Thesis**: The modest bullish case wins: supplied quarterly NVDA revenue of $96.2 billion rose about 17.9% sequentially, operating income reached $63.7 billion at roughly a 66.2% margin, and the October 1 close of $230.86 stood above the $226.43 10-day EMA and $217.61 50-day SMA. Conviction is limited because free cash flow fell from $48.6 billion to $21.4 billion amid a $30.7 billion working-capital outflow; receivables and inventory grew faster than sales, and a roughly $7.8 billion securities gain clouds reported net income. Valuation, forward demand, the current quote, confirmation that the supplied quarter was publicly available by the analysis date, and portfolio allocation limits are unavailable; existing technology and crypto positions add correlated risk. The prior NVDA five-day +3.2% alpha modestly supports direction, while another prior result is unavailable (+nan%); neither establishes a 3–6-month thesis. Pause additions or reduce toward standard weight if collections and inventory worsen, free-cash-flow conversion fails to recover, revenue or operating margins weaken, or the trend breaks sustainably; stronger verified cash conversion and demand would support further staged additions.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3–6 months
+
+<!-- ENTRY_END -->
+
+[2026-10-02 | AVGO | Hold | pending]
+
+DECISION:
+**Rating**: Hold
+
+**Executive Summary**: Maintain the existing 0.03636 units of AVGO; do not execute the proposed buy at the cited $343.64 close. Reassess over 1–3 months after verifying the July-quarter disclosures, valuation and portfolio technology concentration; consider a small staged add only if those checks support the case and AVGO sustains a recovery above $351.71–$353.85, with $366.17 offering stronger trend confirmation. Treat $336.94 as a review trigger, not a guaranteed stop or support level.
+
+**Investment Thesis**: The reported 86% year-over-year July-quarter revenue growth, roughly 54% operating margin, $13.67 billion free cash flow and declining net debt favor retaining AVGO exposure. They do not yet justify adding: the debate flags uncertainty about whether the period's figures were publicly available by the analysis date, missing valuation and company confirmation, rising receivables and inventory, working-capital cash use and substantial stock-based compensation. AVGO closed at $343.64 below its 10-day EMA ($351.71), 50-day SMA ($373.41) and 200-day SMA ($366.17); RSI was 39.81, and a positive MACD histogram does not establish a reversal. Existing AVGO holdings preserve upside while NVDA, MSFT and AAPL add correlated technology exposure; without a defined standard allocation or portfolio limits, the proposed 1.25× cap is not actionable. The $336.94 reference lies just $6.70 below the cited entry, versus $10.65 ATR, so it cannot reliably cap losses. The prior AVGO overweight's negative five-day alpha supports caution about timing but does not resolve a multimonth thesis; the subsequent Hold's reported alpha was unavailable. Verified sustained growth and cash conversion, continued deleveraging, acceptable valuation and improving price action would favor an overweight; weakened collections, cash flow or leverage would favor reducing exposure.
+
+**Price Target**: not provided
+
+**Time Horizon**: 1–3 months to reassessment
+
+<!-- ENTRY_END -->
+
+[2026-10-02 | MSFT | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Favor a modest, conditional increase in MSFT over 6–12 months, retaining the existing 0.04974 units and adding a small first tranche only if a current quote offers a disciplined entry and portfolio limits permit it. Do not deploy all $323.76 of available cash or automatically target 1.1–1.25× a standard allocation: the standard weight is unknown, and AAPL, AVGO, NVDA, and crypto already add correlated risk. Treat the October 1 $512.80 close and proposed $506.81 entry as historical references, not live orders; pause additions and reassess near or below the historical $484.66 50-day average, which is not a guaranteed stop.
+
+**Investment Thesis**: The constructive case wins, but not decisively enough for a full-conviction Buy: FY2026 MSFT revenue rose 17.8%, operating income 20.8%, and operating cash flow 34.4% to $182.9 billion, while free cash flow remained positive at $67.0 billion. The October 1 close exceeded the 10-day EMA and 50- and 200-day averages, supporting a measured increase rather than a trim. Against that, capex jumped 79.6% to $115.9 billion and free cash flow declined 6.5%; AI capacity returns remain unproven, securities-sale gains flatter reported earnings, and the near-upper-band price and nearly flat MACD argue against chasing. A current quote, valuation multiples, defined portfolio allocation, and segment-level AI economics are missing, so no price target or immediate execution price is justified. Expand only if subsequent results show sustained operating growth and improved cash-flow conversion or measurable returns on investment; stop adding or return toward a standard allocation if capex persistently outruns cash generation without monetization. The prior MSFT five-day outperformance is too brief to validate this longer thesis, and the latest five-day alpha was unavailable.
+
+**Price Target**: not provided
+
+**Time Horizon**: 6–12 months
+
+<!-- ENTRY_END -->
+
+[2026-10-02 | AAPL | Hold | pending]
+
+DECISION:
+**Rating**: Hold
+
+**Executive Summary**: Hold the existing 0.07315 units of AAPL; do not add or trim on the available evidence. At the cited $330.32 close, the stake was worth about $24.16, but full portfolio weights and transaction costs are unknown, so a responsible trim cannot be sized. Review over 3–6 months as verified disclosures and valuation become available; sustained weakness below the historical $322.11 50-day average warrants reassessment, not an automatic stop.
+
+**Investment Thesis**: The case for maintaining a small existing AAPL position is stronger than the case for selling: reported year-over-year revenue growth of 16.4%, net-income growth of 27.1% and $31.9 billion of quarterly free cash flow, together with a price above the rising 50- and 200-day averages, do not establish deterioration. But the June-quarter figures may not have been public by the decision date, no contemporaneous valuation or forward outlook is supplied, working capital narrowed to $492 million, and the $330.32 close was below the 10-day EMA with MACD below its signal. Those gaps and weaker short-term momentum defeat an add, while neither the liquidity data nor low-confidence social commentary establishes distress or a sell case. Prior AAPL avoid-entry calls were made when no position was held; the reported five-day underperformance on September 24 is too brief to establish the longer-term thesis, and the September 25 return is unavailable. Verify filing timing, subsequent cash generation, working capital, capital-return coverage and current valuation before increasing exposure; consider reducing if verified fundamentals weaken, sustained price weakness develops or complete portfolio weights reveal excessive concentration. Recovery above the historical $333.70 10-day EMA and $341.07 September 25 close could improve timing but would not resolve the valuation gap.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3–6 months, with earlier review upon verified disclosures or sustained technical weakness
+
+<!-- ENTRY_END -->
+
+[2026-10-02 | ABBV | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Favor a modest, conditional increase in ABBV, not a market buy at the cited $262.82 reference price. Verify a current quote and the portfolio’s standard position size; only if ABBV remains below standard, consider a small fractional-share limit add near $257.84, initially no more than half the trader’s 0.1×-standard cap. Keep the remaining $323.76 cash available for now, treat $251.24 as a risk-review level rather than a guaranteed exit, and reassess over 3–6 months and after the next results.
+
+**Investment Thesis**: The favorable case narrowly wins on ABBV’s 10.2% year-over-year quarterly revenue growth and trailing-four-quarter free-cash-flow dividend coverage of roughly 1.52×; its price was also above the cited 50- and 200-day averages. This warrants measured exposure alongside the existing 0.04749-unit position rather than an aggressive Buy. The latest quarter’s $3.114 billion in free cash flow barely covered $3.070 billion in dividends, however, amid a $2.721 billion working-capital outflow, while net debt was $64.253 billion. Neutral RSI, MACD below its signal, and ATR of $5.15 undermine claims of confirmed support or a reliable 2:1 reward-to-risk based on Bollinger bands. Pipeline and macro claims are unverified; valuation, product-level growth durability, current executable price, and standard allocation are missing. Add further only on sustained growth, better cash-flow coverage after working-capital effects, stable or falling net debt, and firmer momentum; reassess for reduced exposure if cash coverage stays near 1× or debt rises as growth weakens. Prior ABBV five-day returns, including an unavailable result, do not establish the 3–6-month thesis.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3–6 months; review after next earnings
+
+<!-- ENTRY_END -->
+
+[2026-10-02 | NDQ.AX | Overweight | pending]
+
+DECISION:
+**Rating**: Overweight
+
+**Executive Summary**: Favor a modest, conditional increase in NDQ.AX, not a market purchase at 64.18 or an automatic buy on a touch of 62.88. After checking existing Nasdaq/technology and currency exposure, fund holdings, valuation, fees, tracking and price versus NAV, add in 0.1–0.25-standard-allocation tranches only if a pullback toward the 62.88 10-day EMA stabilizes or a sustained move above 64.50 confirms follow-through; keep total exposure at no more than 1.1–1.25 times a standard allocation, subject to tighter portfolio limits. Size for potential slippage beyond the proposed 61.90 risk reference, pause additions on a sustained break below 62.88 with weakening MACD, and reassess or trim if weakness reaches or breaks the 60.41 50-day SMA over a 3–6-month horizon.
+
+**Investment Thesis**: The constructive trend narrowly wins: NDQ.AX closed at 64.18 above its 62.88 10-day EMA, 60.41 50-day SMA and 56.96 200-day SMA, with MACD above its signal. But the fast advance from 59.47 to a 64.50 recent high, RSI of 71.03 and proximity to the 65.10 upper Bollinger band make immediate full-size buying unattractive; the 10-day EMA is not established support, and a 61.90 stop cannot guarantee an exit, especially given the reported 0.65 ATR and gap risk. Easing yields may aid growth exposure, but inflation and growth risks remain, while sentiment observations and verified fund holdings, valuation, NAV, fees and currency treatment are missing. NDQ.AX's prior five-day relative gains modestly support momentum, not the 3–6-month thesis or any specific entry. A sustained loss of the short-term trend with weakening MACD, a break of the 50-day trend, or verified adverse yield or earnings developments would weaken the overweight case.
+
+**Price Target**: not provided
+
+**Time Horizon**: 3–6 months
+
+<!-- ENTRY_END -->
+
+[2026-10-02 | CBA.AX | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Underweight CBA.AX: aim for approximately 75% of your own risk-budgeted standard allocation, trimming about 25% if currently at a full allocation; adjust for existing holdings, concentration, taxes and trading costs. If already at or below that level, do not sell mechanically or add on the bounce; if unowned, defer a full entry. Review downside risk on a move toward A$147.09, and reconsider restoring exposure after sustained recovery above A$152.97 and, more convincingly, A$160.70 alongside verified bank fundamentals. These are reference levels from the supplied analysis, not fixed stops or live quotes; reassess through the next published results.
+
+**Investment Thesis**: A measured reduction is stronger than either holding a full allocation or exiting CBA.AX. The cited A$151.45 close sits only marginally above the 10-day EMA but below the declining A$160.70 50-day SMA and A$162.89 200-day SMA; RSI of 41.42 and a still-negative MACD signal weak underlying momentum despite a positive MACD histogram. Net loans grew 6.8% and assets 7.3% year over year, supporting a reason to retain some exposure, but neither proves profitable growth: current earnings, net interest margin, credit losses, funding, regulatory capital and valuation evidence is missing. Roughly flat reported equity alongside asset growth merits a capital check, not a conclusion of capital distress. The low-confidence default sentiment score, indirect US risk-on move and incompletely contextualized CEO sale do not resolve the case. A sustained reclaim of A$152.97 followed by A$160.70, supported by published margins, credit quality, funding, capital and valuation, could justify rebuilding; weakness toward A$147.09 or adverse disclosures would strengthen the reduction case. The A$2.61 ATR informs sizing, not an invented stop. Prior CBA.AX Underweight calls produced mixed five-day relative results (-0.1% and +0.2% alpha); those short windows do not settle the thesis and argue for assessing dividend-adjusted performance and verified bank disclosures rather than reacting to a few sessions.
+
+**Price Target**: not provided
+
+**Time Horizon**: Through the next published results
+
+<!-- ENTRY_END -->
+
+[2026-10-02 | BHP.AX | Underweight | pending]
+
+DECISION:
+**Rating**: Underweight
+
+**Executive Summary**: Underweight BHP.AX over the coming weeks to months: if the holding exceeds the caller’s intended risk budget, trim gradually toward roughly 50–75% of a standard allocation, adjusted for concentration and other commodity exposure. If it is already modest, do not force a sale; avoid adding on the tentative rebound. Reassess after verified cash-flow, valuation, commodity-demand and project-return evidence, and sustained improvement above the 61.82 50-day average; use portfolio risk limits rather than an invented stop.
+
+**Investment Thesis**: Measured reduction is better supported than either a full exit or an addition. BHP.AX closed at 61.21 below its rising 50-day average of 61.82, with MACD slightly negative and below its signal, after retreating from the 66.23 August high; the rebound has not established medium-term strength. But its close above the 60.85 10-day EMA, RSI recovery to 49.15, and position above the rising 55.34 200-day average argue against Sell. Reported cash of A$18.45bn and net debt of A$4.29bn offer a liquidity counterweight, yet total debt increased and filing timing, earnings, free cash flow, valuation, returns on assets under construction, and current commodity and China-demand evidence remain unverified or unavailable. Sentiment feeds returned no observations, so the nominally neutral score is not reassurance. A sustained reclaim of 61.82 with improving momentum and verified sound cash generation would support restoring weight; renewed weakness toward the 59.25 recent closing low or 58.61 lower-band reference, material cash-flow weakness, or deterioration of the longer-term trend would warrant deeper caution. These price levels are watch references, not guaranteed support or automatic stops. The prior BHP.AX Underweight calls' near-flat five-day outcomes do not resolve this weeks-to-months thesis, and past Escondida-related uncertainties require verified operational updates rather than assumptions about their current impact.
+
+**Price Target**: not provided
+
+**Time Horizon**: Coming weeks to months
 
 <!-- ENTRY_END -->
 
