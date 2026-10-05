@@ -35,7 +35,7 @@
     }
   },
   "last_run": {
-    "crypto": "2026-10-04T23:05:37+00:00",
+    "crypto": "2026-10-05T05:32:22+00:00",
     "stocks": "2026-10-03T01:20:11+00:00"
   },
   "net_invested": 174.36614074913197,
@@ -871,6 +871,27 @@
       "rating": "ERROR",
       "ticker": "SOL-USD",
       "time": "2026-10-04T23:05:37+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 85454.7,
+      "rating": "ERROR",
+      "ticker": "BTC-USD",
+      "time": "2026-10-05T05:32:22+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 2695.306,
+      "rating": "ERROR",
+      "ticker": "ETH-USD",
+      "time": "2026-10-05T05:32:22+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 120.2,
+      "rating": "ERROR",
+      "ticker": "SOL-USD",
+      "time": "2026-10-05T05:32:22+00:00"
     }
   ],
   "realized_pnl": -0.13627656800000235,
@@ -1086,6 +1107,13 @@
       "scope": "crypto",
       "time": "2026-10-04T23:05:37+00:00",
       "value": 177.7236
+    },
+    {
+      "net_invested": 174.3661,
+      "pnl": 2.4048,
+      "scope": "crypto",
+      "time": "2026-10-05T05:32:22+00:00",
+      "value": 176.771
     }
   ],
   "spend": {
