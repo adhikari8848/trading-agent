@@ -6,8 +6,8 @@
       "qty": 0.073146
     },
     "ABBV": {
-      "cost": 12.563309927999999,
-      "qty": 0.047488999999999996
+      "cost": 24.998504008,
+      "qty": 0.094617
     },
     "AVGO": {
       "cost": 12.817856424,
@@ -35,23 +35,11 @@
     }
   },
   "last_run": {
-    "crypto": "2026-10-05T05:32:22+00:00",
+    "crypto": "2026-10-05T17:07:19+00:00",
     "stocks": "2026-10-03T01:20:11+00:00"
   },
-  "net_invested": 174.36614074913197,
-  "pending_orders": {
-    "ca758391-1d6a-4675-be5b-daceaadff13a": {
-      "client_order_id": "ta-202610031120-0-63531090",
-      "limit": 265.54,
-      "placed_at": "2026-10-03T01:47:17+00:00",
-      "qty": 0.047128,
-      "rating": "Overweight",
-      "recorded_filled": 0.0,
-      "side": "buy",
-      "symbol": "ABBV",
-      "ticker": "ABBV"
-    }
-  },
+  "net_invested": 186.80133482913197,
+  "pending_orders": {},
   "ratings_log": [
     {
       "kind": "crypto",
@@ -892,6 +880,27 @@
       "rating": "ERROR",
       "ticker": "SOL-USD",
       "time": "2026-10-05T05:32:22+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 85199.38,
+      "rating": "ERROR",
+      "ticker": "BTC-USD",
+      "time": "2026-10-05T17:07:19+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 2693.056,
+      "rating": "ERROR",
+      "ticker": "ETH-USD",
+      "time": "2026-10-05T17:07:19+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 119.58,
+      "rating": "ERROR",
+      "ticker": "SOL-USD",
+      "time": "2026-10-05T17:07:19+00:00"
     }
   ],
   "realized_pnl": -0.13627656800000235,
@@ -1114,6 +1123,13 @@
       "scope": "crypto",
       "time": "2026-10-05T05:32:22+00:00",
       "value": 176.771
+    },
+    {
+      "net_invested": 186.8013,
+      "pnl": 3.278,
+      "scope": "crypto",
+      "time": "2026-10-05T17:07:19+00:00",
+      "value": 190.0793
     }
   ],
   "spend": {
@@ -1128,7 +1144,8 @@
     "2026-10-02": 0.614661,
     "2026-10-03": 0.556987,
     "2026-10-04": 0.0,
-    "2026-10-05": 0.0
+    "2026-10-05": 0.0,
+    "2026-10-06": 0.0
   },
   "telegram_offset": 268796037,
   "trades": [
@@ -1223,6 +1240,15 @@
       "side": "sell",
       "symbol": "AVGO",
       "time": "2026-10-02T14:43:05+00:00"
+    },
+    {
+      "notional": 12.4352,
+      "order_id": "ca758391-1d6a-4675-be5b-daceaadff13a",
+      "price": 263.86,
+      "qty": 0.047128,
+      "side": "buy",
+      "symbol": "ABBV",
+      "time": "2026-10-05T17:07:20+00:00"
     }
   ]
 }
