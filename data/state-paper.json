@@ -36,7 +36,7 @@
   },
   "last_run": {
     "crypto": "2026-10-28T15:04:33+00:00",
-    "stocks": "2026-10-28T01:34:03+00:00"
+    "stocks": "2026-10-29T01:56:45+00:00"
   },
   "net_invested": 186.80133482913197,
   "pending_orders": {},
@@ -2945,6 +2945,62 @@
       "rating": "ERROR",
       "ticker": "SOL-USD",
       "time": "2026-10-28T15:04:33+00:00"
+    },
+    {
+      "kind": "us_stock",
+      "price": 213.38,
+      "rating": "ERROR",
+      "ticker": "NVDA",
+      "time": "2026-10-29T01:56:45+00:00"
+    },
+    {
+      "kind": "us_stock",
+      "price": 342.84,
+      "rating": "ERROR",
+      "ticker": "AVGO",
+      "time": "2026-10-29T01:56:45+00:00"
+    },
+    {
+      "kind": "us_stock",
+      "price": 543.64,
+      "rating": "ERROR",
+      "ticker": "MSFT",
+      "time": "2026-10-29T01:56:45+00:00"
+    },
+    {
+      "kind": "us_stock",
+      "price": 345.02,
+      "rating": "ERROR",
+      "ticker": "AAPL",
+      "time": "2026-10-29T01:56:45+00:00"
+    },
+    {
+      "kind": "us_stock",
+      "price": 286.265,
+      "rating": "ERROR",
+      "ticker": "ABBV",
+      "time": "2026-10-29T01:56:45+00:00"
+    },
+    {
+      "kind": "asx",
+      "price": null,
+      "rating": "ERROR",
+      "ticker": "NDQ.AX",
+      "time": "2026-10-29T01:56:45+00:00"
+    },
+    {
+      "kind": "asx",
+      "price": null,
+      "rating": "ERROR",
+      "ticker": "CBA.AX",
+      "time": "2026-10-29T01:56:45+00:00"
+    },
+    {
+      "kind": "asx",
+      "price": null,
+      "rating": "ERROR",
+      "ticker": "BHP.AX",
+      "time": "2026-10-29T01:56:45+00:00"
     }
   ],
   "realized_pnl": -0.13627656800000235,
@@ -2972,7 +3028,8 @@
     "stocks:2026-10-22": "done",
     "stocks:2026-10-23": "done",
     "stocks:2026-10-26": "done",
-    "stocks:2026-10-27": "done"
+    "stocks:2026-10-27": "done",
+    "stocks:2026-10-28": "done"
   },
   "snapshots": [
     {
@@ -3674,6 +3731,13 @@
       "scope": "crypto",
       "time": "2026-10-28T15:04:33+00:00",
       "value": 181.8488
+    },
+    {
+      "net_invested": 186.8013,
+      "pnl": -5.3991,
+      "scope": "stocks",
+      "time": "2026-10-29T01:56:45+00:00",
+      "value": 181.4022
     }
   ],
   "spend": {
