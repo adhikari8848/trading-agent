@@ -35,7 +35,7 @@
     }
   },
   "last_run": {
-    "crypto": "2026-10-30T15:00:58+00:00",
+    "crypto": "2026-10-31T05:31:42+00:00",
     "stocks": "2026-10-31T01:44:59+00:00"
   },
   "net_invested": 186.80133482913197,
@@ -3197,6 +3197,27 @@
       "rating": "ERROR",
       "ticker": "BHP.AX",
       "time": "2026-10-31T01:44:59+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 77100.0,
+      "rating": "ERROR",
+      "ticker": "BTC-USD",
+      "time": "2026-10-31T05:31:42+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 2239.8,
+      "rating": "ERROR",
+      "ticker": "ETH-USD",
+      "time": "2026-10-31T05:31:42+00:00"
+    },
+    {
+      "kind": "crypto",
+      "price": 95.914,
+      "rating": "ERROR",
+      "ticker": "SOL-USD",
+      "time": "2026-10-31T05:31:42+00:00"
     }
   ],
   "realized_pnl": -0.13627656800000235,
@@ -3978,6 +3999,13 @@
       "scope": "stocks",
       "time": "2026-10-31T01:44:59+00:00",
       "value": 177.4438
+    },
+    {
+      "net_invested": 186.8013,
+      "pnl": -9.6337,
+      "scope": "crypto",
+      "time": "2026-10-31T05:31:42+00:00",
+      "value": 177.1677
     }
   ],
   "spend": {
